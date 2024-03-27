@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ArrClassNew {
     public static void main(String[] args) {
 
@@ -9,7 +11,7 @@ public class ArrClassNew {
         String[] days = {"M", "D", "M"};
         System.out.println(days[2]);
 
-        for (int i =0; i< days.length; i++) {
+        for (int i = 0; i < days.length; i++) {
 
             System.out.println(i);
         }
@@ -21,8 +23,23 @@ public class ArrClassNew {
             System.out.println(arr1[i]);
 
         }
+    }
+}
 
+class ArrFruitClass {
+    public static void main(String[] args) {
+        String[] fruits = new String[]{"Apfel", "Orange", "Pinapple", "Banan"};
+        System.out.println(fruits[1] + ", " + fruits[3]);
+        System.out.println(fruits.length);
+        fruits[2] = "Kivi";
+        System.out.println(fruits[2]);
 
     }
 }
+
+class ArrForClass {
+
+}
+
+
 
