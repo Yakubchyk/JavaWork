@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class ArrClassNew {
@@ -38,8 +40,73 @@ class ArrFruitClass {
 }
 
 class ArrForClass {
+    public static void main(String[] args) {
 
+        String[] arrStr = {"Einz", "Zwo", "Drei", "Vier"};
+        System.out.println(arrStr.length);
+
+        for (String line : arrStr) { // for_Each
+            System.out.print(line + " ");
+        }
+    }
 }
 
+class ArrForZweiClass {
+    public static void main(String[] args) {
+
+        String[] arrStr = {"Einz", "Zwo", "Drei", "Vier"};
+        System.out.println(arrStr.length);
+        for (int i = 0; i < args.length; i++) {
+
+        }
+    }
+}
+
+class ArrArraysClass {
+    public static void main(String[] args) {
+
+
+        String[] arrStr = {"Einz", "Zwo", "Drei", "Vier"};
+        String[] arrStr2 = {"Einz", "Zwo", "Drei", "Vier"};
+        String[] newArray = Arrays.copyOf(arrStr2, 50);
+        System.out.println(Arrays.compare(arrStr, arrStr2));
+        System.out.println(Arrays.equals(arrStr, arrStr2)); //сравнение массива
+        Arrays.fill(newArray, "Hei");
+
+
+    }
+}
+
+// бинарная сортировка массива.
+class ArrCompClass {
+    public static void main(String[] args) {
+        int[] ArrSort = {10, 4, 3, 7, 5, 8};
+        Arrays.sort(ArrSort);
+
+        int index = Arrays.binarySearch(ArrSort, 7);
+        System.out.println(index);
+    }
+}
+
+class ArrMegaClass {
+    public static void main(String[] args) {
+//        int[] arr = {1, 4, 5, 7};
+//
+//        int[] newArr; // 1458
+
+        int[] arr = {0, 1, 2, 7, 4, 5, 8, 9, 6}; // N = 9;
+        int n = 9;
+
+        Arrays.sort(arr);
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+            if (arr[i] + 1 == i+1) {
+                System.out.println(i);
+            }
+
+        }
+    }
+}
 
 
