@@ -15,7 +15,12 @@ public class ArrClass {
         // System.out.println(Math.pow(152, 21)); // возведение в степерь
         Random random = new Random();
         System.out.println(random.nextBoolean());
+        int min, max;
+        min = 50;
+        max = 5;
+        System.out.println(Math.floor((Math.random() * (max - min + 1)) + min));
 
+        final int MAX = 50; //не изменяемая переменная;
 
 
     }
