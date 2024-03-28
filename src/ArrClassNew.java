@@ -90,23 +90,20 @@ class ArrCompClass {
 
 class ArrMegaClass {
     public static void main(String[] args) {
-//        int[] arr = {1, 4, 5, 7};
-//
-//        int[] newArr; // 1458
+        int[] arr = {0, 1, 3, 2, 4, 5, 8, 9, 6}; // N = 9;
 
-        int[] arr = {0, 1, 2, 7, 4, 5, 8, 9, 6}; // N = 9;
-        int n = 9;
+        int realSum = 0;
+        int sum = 0;
 
-        Arrays.sort(arr);
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-            if (arr[i] + 1 == i+1) {
-                System.out.println(i);
-            }
-
+        for (int num : arr) {
+            sum += num;
         }
+
+        for (int i = 0; i <= arr.length; i++) {
+            realSum += i;
+        }
+        int f = realSum - sum;
+        System.out.println(f);
     }
 }
-
 
